@@ -91,4 +91,4 @@ colormaps = [
     ("jil_colors", jil_colors),
     ("max_colors", max_colors),
     ("max_colors_2", max_colors_2),
-    ]
+]

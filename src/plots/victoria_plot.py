@@ -43,9 +43,5 @@ def butterfly_plot(
 if __name__ == "__main__":
     # Example usage
     butterfly_plot(
-        t_len=int(12*np.pi),
-        step=0.001,
-        color_len=30,
-        phi_step=0,
-        line_thickness=2.5
+        t_len=int(12 * np.pi), step=0.001, color_len=30, phi_step=0, line_thickness=2.5
     )

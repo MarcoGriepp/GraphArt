@@ -148,7 +148,7 @@ if __name__ == "__main__":
     step_sine_plot(
         n_lines=80,
         dist="normal",
-        x_start=np.pi/2 + 0.75,
+        x_start=np.pi / 2 + 0.75,
         decay_rate=1,
         sigma_initialisation=5,
         x_length=20,

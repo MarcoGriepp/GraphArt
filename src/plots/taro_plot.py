@@ -79,5 +79,5 @@ if __name__ == "__main__":
         step_size=0.1,
         one_sided=True,
         line_thickness=4,
-        sigma_error=0.05
+        sigma_error=0.05,
     )

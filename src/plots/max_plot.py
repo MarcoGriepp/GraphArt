@@ -193,5 +193,5 @@ if __name__ == "__main__":
         proportions=[0.36, 0, 0.64],
         phi_base=1.05,
         branch_segment_length=10,
-        branch_angle=np.pi/12,
+        branch_angle=np.pi / 12,
     )

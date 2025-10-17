@@ -110,5 +110,5 @@ if __name__ == "__main__":
         line_thickness=20,
         show_actual=True,
         a_b=[-0.5, 10],
-        y_lim=[-5, 25]
+        y_lim=[-5, 25],
     )

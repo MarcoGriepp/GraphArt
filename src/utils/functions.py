@@ -40,12 +40,12 @@ PORTRAIT_DIMENSIONS = (3508 / 300, 4961 / 300)
 def create_cmap(color_1: str, color_2: str, length: int) -> list:
     """
     Create a color gradient between two colors.
-    
+
     Args:
         color_1: Starting color (hex format)
         color_2: Ending color (hex format)
         length: Number of colors in the gradient
-        
+
     Returns:
         List of hex color codes
     """
@@ -64,11 +64,11 @@ def create_cmap(color_1: str, color_2: str, length: int) -> list:
 def create_multi_cmap(colors: list, length: int) -> list:
     """
     Create a colormap from a list of colors and sample 'length' colors from it.
-    
+
     Args:
         colors: List of color hex codes
         length: Number of colors to sample from the gradient
-        
+
     Returns:
         List of sampled hex color codes
     """
@@ -76,10 +76,12 @@ def create_multi_cmap(colors: list, length: int) -> list:
         return ["#000000"] * length  # Default to black
     if length == 0:
         return []
-    
+
     cmap = mcolors.LinearSegmentedColormap.from_list("custom", colors)
     gradient = [
-        mcolors.to_hex(cmap(i / (length - 1))) if length > 1 else mcolors.to_hex(cmap(0.0))
+        mcolors.to_hex(cmap(i / (length - 1)))
+        if length > 1
+        else mcolors.to_hex(cmap(0.0))
         for i in range(length)
     ]
     return gradient
@@ -942,6 +944,7 @@ def butterfly_plot(
     line_thickness=1,
 ):
     from src.utils.colors import victoria_colors
+
     t = np.arange(stop=t_len, step=step)
 
     cmap = create_multi_cmap(colors=list(victoria_colors.values()), length=color_len)
@@ -973,7 +976,7 @@ def butterfly_plot(
 
 def warp_plot(num_lines, x_start, x_end, **kwargs):
     from src.utils.colors import gvantsa_colors
-    
+
     # Set up canvas with specified size and DPI and green background
     fig, ax = plt.subplots(figsize=LANDSCAPE_DIMENSIONS, dpi=300, facecolor="green")
     ax.set_facecolor("green")
@@ -1052,4 +1055,3 @@ def save_for_later(
 
     plt.tight_layout()
     plt.show()
-
