@@ -27,59 +27,6 @@ GraphArt/
 │   └── source_files/          # GIMP source files (.xcf)
 ├── requirements.txt
 └── README.md
-```
-
-## Installation
-
-1. Clone this repository:
-```bash
-git clone https://github.com/MarcoGriepp/GraphArt.git
-cd GraphArt
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-### Using the Jupyter Notebook
-
-Open and run `notebooks/main.ipynb` to explore all the different plot functions interactively.
-
-### Using Individual Plot Functions
-
-Each plot function can be imported and used directly:
-
-```python
-from src.plots import warp_plot, taylor_expansion_plot, tree_plot
-
-# Generate a warped sine wave visualization
-warp_plot(num_lines=20, x_start=-8, x_end=8, linewidth=17.3)
-
-# Create a Taylor series expansion plot
-taylor_expansion_plot(
-    n_terms=30,
-    x_start=-25,
-    x_end=25,
-    bg_color="#E7D7BE",
-    line_thickness=20,
-    show_actual=True,
-    a_b=[-0.5, 10],
-    y_lim=[-5, 25]
-)
-
-# Generate a fractal tree
-tree_plot(
-    n_lines=80,
-    x_length=15,
-    proportions=[0.36, 0, 0.64],
-    phi_base=1.05,
-    branch_segment_length=10,
-    branch_angle=np.pi/12,
-)
-```
 
 ### Available Plot Functions
 
@@ -89,18 +36,6 @@ tree_plot(
 - **`noisewave_plot`**: Creates symmetric wave patterns with controlled noise
 - **`step_sine_plot`**: Combines sine waves with stepped random walks
 - **`butterfly_plot`**: Renders parametric butterfly curves
-
-### Color Palettes
-
-The project includes several curated color palettes accessible via `src.utils.colors`:
-
-- `taro_colors`
-- `gvantsa_colors`
-- `victoria_colors`
-- `victor_colors` / `victor_colors_2`
-- `max_colors` / `max_colors_2`
-- `jil_colors`
-- `mehdi_colors`
 
 ## Utilities
 
