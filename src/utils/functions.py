@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from colors import *
+from src.utils.colors import *
 import math
 from scipy.optimize import minimize, Bounds
 from matplotlib.collections import LineCollection
