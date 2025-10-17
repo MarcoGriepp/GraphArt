@@ -1,55 +1,11 @@
+"""Jil's Taylor expansion plot - visualizing Taylor series approximations."""
+
 import warnings
 from matplotlib.collections import LineCollection
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
-
-# Define dimensions if not imported
-landscape_dimensions = (4961 / 300, 3508 / 300)
-
-
-def create_multi_cmap(colors_list, length):
-    """
-    Creates a colormap from a list of colors and samples 'length' colors from it.
-    """
-    if not colors_list:  # Handle empty colors_list
-        return ["#000000"] * length  # Default to black
-    if length == 0:
-        return []
-    cmap = mcolors.LinearSegmentedColormap.from_list("custom_multi_cmap", colors_list)
-    gradient = [
-        mcolors.to_hex(cmap(i / (length - 1)))
-        if length > 1
-        else mcolors.to_hex(cmap(0.0))
-        for i in range(length)
-    ]
-    return gradient
-
-
-def colored_line(x, y, c, ax, **lc_kwargs):
-    if "array" in lc_kwargs:
-        warnings.warn('The provided "array" keyword argument will be overridden')
-
-    # Default the capstyle to butt so that the line segments smoothly line up
-    default_kwargs = {"capstyle": "butt"}
-    default_kwargs.update(lc_kwargs)
-
-    # Compute the midpoints of the line segments. Include the first and last points
-    # twice so we don't need any special syntax later to handle them.
-    x = np.asarray(x)
-    y = np.asarray(y)
-    x_midpts = np.hstack((x[0], 0.5 * (x[1:] + x[:-1]), x[-1]))
-    y_midpts = np.hstack((y[0], 0.5 * (y[1:] + y[:-1]), y[-1]))
-
-    coord_start = np.column_stack((x_midpts[:-1], y_midpts[:-1]))[:, np.newaxis, :]
-    coord_mid = np.column_stack((x, y))[:, np.newaxis, :]
-    coord_end = np.column_stack((x_midpts[1:], y_midpts[1:]))[:, np.newaxis, :]
-    segments = np.concatenate((coord_start, coord_mid, coord_end), axis=1)
-
-    lc = LineCollection(segments, **default_kwargs)
-    lc.set_array(c)  # set the colors of each segment
-
-    return ax.add_collection(lc)
+from scipy.special import factorial
+from src.utils import create_multi_cmap, colored_line, LANDSCAPE_DIMENSIONS
 
 
 def taylor_expansion_plot(
@@ -66,7 +22,6 @@ def taylor_expansion_plot(
     """
     Plot Taylor series expansion of sine wave using different numbers of terms.
     """
-    from scipy.special import factorial
 
     # Pink, turquoise, lime green, beige colors
     water_colors = np.flip(
@@ -88,7 +43,7 @@ def taylor_expansion_plot(
     y_actual = np.sin(x)
 
     # Create the figure
-    fig, ax = plt.subplots(figsize=landscape_dimensions)
+    fig, ax = plt.subplots(figsize=LANDSCAPE_DIMENSIONS)
     ax.axis("off")
 
     # Create a color map for the approximations
@@ -144,4 +99,16 @@ def taylor_expansion_plot(
 
     plt.show()
 
-    taylor_expansion_plot()
+
+if __name__ == "__main__":
+    # Example usage
+    taylor_expansion_plot(
+        n_terms=30,
+        x_start=-25,
+        x_end=25,
+        bg_color="#E7D7BE",
+        line_thickness=20,
+        show_actual=True,
+        a_b=[-0.5, 10],
+        y_lim=[-5, 25]
+    )

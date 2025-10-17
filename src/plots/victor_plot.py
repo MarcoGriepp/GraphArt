@@ -1,27 +1,8 @@
+"""Victor's step sine plot - stepped random walk visualization."""
+
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
-
-# Define dimensions if not imported
-portrait_dimensions = (3508 / 300, 4961 / 300)
-
-
-def create_multi_cmap(colors_list, length):
-    """
-    Creates a colormap from a list of colors and samples 'length' colors from it.
-    """
-    if not colors_list:  # Handle empty colors_list
-        return ["#000000"] * length  # Default to black
-    if length == 0:
-        return []
-    cmap = mcolors.LinearSegmentedColormap.from_list("custom_multi_cmap", colors_list)
-    gradient = [
-        mcolors.to_hex(cmap(i / (length - 1)))
-        if length > 1
-        else mcolors.to_hex(cmap(0.0))
-        for i in range(length)
-    ]
-    return gradient
+from src.utils import create_multi_cmap, PORTRAIT_DIMENSIONS
 
 
 def step_sine_plot(
@@ -73,7 +54,7 @@ def step_sine_plot(
         )
     )[:-midsection_n]
 
-    fig, axs = plt.subplots(nrows=1, ncols=1, figsize=portrait_dimensions)
+    fig, axs = plt.subplots(nrows=1, ncols=1, figsize=PORTRAIT_DIMENSIONS)
     axs.axis("off")
 
     gradient_1 = create_multi_cmap(
@@ -162,4 +143,22 @@ def step_sine_plot(
     plt.show()
 
 
-step_sine_plot()
+if __name__ == "__main__":
+    # Example usage
+    step_sine_plot(
+        n_lines=80,
+        dist="normal",
+        x_start=np.pi/2 + 0.75,
+        decay_rate=1,
+        sigma_initialisation=5,
+        x_length=20,
+        step_size=0.1,
+        one_sided=False,
+        line_thickness=2,
+        block_step_size=2,
+        sigma_error=15,
+        chance_0=0.1,
+        vertical=True,
+        phi_coef=0.8,
+        midsection_proportion=0.2,
+    )

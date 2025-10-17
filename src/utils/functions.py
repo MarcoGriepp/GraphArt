@@ -1,14 +1,16 @@
-import numpy as np
-import pandas as pd
-from src.utils.colors import *
-import math
-from scipy.optimize import minimize, Bounds
-from matplotlib.collections import LineCollection
+"""Utility functions for GraphArt plotting."""
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
+from matplotlib.collections import LineCollection
+from scipy.optimize import minimize, Bounds
+from scipy.special import factorial
 import subprocess
 import sys
+import os
+import warnings
 from typing import (
     List,
     Dict,
@@ -21,7 +23,6 @@ from typing import (
     Iterator,
     Sequence,
 )
-import os
 
 try:
     import imageio
@@ -29,9 +30,59 @@ except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "imageio"])
     import imageio
 
-import warnings
-
 warnings.simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
+
+# Canvas dimensions for consistent output
+LANDSCAPE_DIMENSIONS = (4961 / 300, 3508 / 300)
+PORTRAIT_DIMENSIONS = (3508 / 300, 4961 / 300)
+
+
+def create_cmap(color_1: str, color_2: str, length: int) -> list:
+    """
+    Create a color gradient between two colors.
+    
+    Args:
+        color_1: Starting color (hex format)
+        color_2: Ending color (hex format)
+        length: Number of colors in the gradient
+        
+    Returns:
+        List of hex color codes
+    """
+    # Convert hex colors to RGB tuples (0-1 scale)
+    rgb1 = np.array(mcolors.to_rgb(color_1))
+    rgb2 = np.array(mcolors.to_rgb(color_2))
+
+    # Generate the gradient
+    gradient = [
+        mcolors.to_hex(rgb1 * (1 - t) + rgb2 * t) for t in np.linspace(0, 1, length)
+    ]
+
+    return gradient
+
+
+def create_multi_cmap(colors: list, length: int) -> list:
+    """
+    Create a colormap from a list of colors and sample 'length' colors from it.
+    
+    Args:
+        colors: List of color hex codes
+        length: Number of colors to sample from the gradient
+        
+    Returns:
+        List of sampled hex color codes
+    """
+    if not colors:  # Handle empty colors list
+        return ["#000000"] * length  # Default to black
+    if length == 0:
+        return []
+    
+    cmap = mcolors.LinearSegmentedColormap.from_list("custom", colors)
+    gradient = [
+        mcolors.to_hex(cmap(i / (length - 1))) if length > 1 else mcolors.to_hex(cmap(0.0))
+        for i in range(length)
+    ]
+    return gradient
 
 
 def show_colors(colors: Dict, title):
@@ -287,7 +338,7 @@ def noisewave_plot(
 
     base_line = np.cos(index)
 
-    fig, axs = plt.subplots(nrows=1, ncols=1, figsize=landscape_dimensions, dpi=300)
+    fig, axs = plt.subplots(nrows=1, ncols=1, figsize=LANDSCAPE_DIMENSIONS, dpi=300)
     axs.axis("off")
 
     gradient_1 = create_multi_cmap(
@@ -379,7 +430,7 @@ def step_sine_plot(
         )
     )[:-midsection_n]
 
-    fig, axs = plt.subplots(nrows=1, ncols=1, figsize=portrait_dimensions)
+    fig, axs = plt.subplots(nrows=1, ncols=1, figsize=PORTRAIT_DIMENSIONS)
     axs.axis("off")
 
     gradient_1 = create_multi_cmap(
@@ -528,34 +579,6 @@ def colored_line(x, y, c, ax, **lc_kwargs):
     return ax.add_collection(lc)
 
 
-def create_cmap(color_1, color_2, length):
-    import matplotlib.colors as mcolors
-    import numpy as np
-
-    # Convert hex colors to RGB tuples (0-1 scale)
-    rgb1 = np.array(mcolors.to_rgb(color_1))
-    rgb2 = np.array(mcolors.to_rgb(color_2))
-
-    # Generate the gradient
-    gradient = [
-        mcolors.to_hex(rgb1 * (1 - t) + rgb2 * t) for t in np.linspace(0, 1, length)
-    ]
-
-    return gradient
-
-
-def create_multi_cmap(colors, length):
-    import matplotlib.colors as mcolors
-
-    # Create a colormap from the list of colors
-    cmap = mcolors.LinearSegmentedColormap.from_list("custom", colors)
-
-    # Generate a list of colors sampled from the colormap
-    gradient = [mcolors.to_hex(cmap(i / (length - 1))) for i in range(length)]
-
-    return gradient
-
-
 def flower_test(cycles, step_size, n_cycles, x_start, x_end):
     total_points = cycles * step_size
     half_total_points = int(total_points / 2)
@@ -618,7 +641,7 @@ def tree_plot(
 
     dispersions = np.random.normal(0, sigma_dispersion, n_lines)
 
-    fig, ax = plt.subplots(figsize=landscape_dimensions)
+    fig, ax = plt.subplots(figsize=LANDSCAPE_DIMENSIONS)
     ax.axis("off")
 
     gradient_1 = create_multi_cmap(["#FF69B4", "#FFFFFF", "#CC7722"], n_lines)
@@ -775,7 +798,7 @@ def taylor_expansion_plot(
     """
     Plot Taylor series expansion of sine wave using different numbers of terms.
     """
-    from scipy.special import factorial
+    from src.utils.colors import victoria_colors
 
     # Pink, turquoise, lime green, beige colors
     water_colors = np.flip(
@@ -797,7 +820,7 @@ def taylor_expansion_plot(
     y_actual = np.sin(x)
 
     # Create the figure
-    fig, ax = plt.subplots(figsize=landscape_dimensions)
+    fig, ax = plt.subplots(figsize=LANDSCAPE_DIMENSIONS)
     ax.axis("off")
 
     # Create a color map for the approximations
@@ -918,10 +941,11 @@ def butterfly_plot(
     step=0.01,
     line_thickness=1,
 ):
+    from src.utils.colors import victoria_colors
     t = np.arange(stop=t_len, step=step)
 
     cmap = create_multi_cmap(colors=list(victoria_colors.values()), length=color_len)
-    fig, ax = plt.subplots(1, 1, figsize=landscape_dimensions, dpi=300)
+    fig, ax = plt.subplots(1, 1, figsize=LANDSCAPE_DIMENSIONS, dpi=300)
     ax.axis("off")
 
     for color in range(color_len):
@@ -948,8 +972,10 @@ def butterfly_plot(
 
 
 def warp_plot(num_lines, x_start, x_end, **kwargs):
+    from src.utils.colors import gvantsa_colors
+    
     # Set up canvas with specified size and DPI and green background
-    fig, ax = plt.subplots(figsize=landscape_dimensions, dpi=300, facecolor="green")
+    fig, ax = plt.subplots(figsize=LANDSCAPE_DIMENSIONS, dpi=300, facecolor="green")
     ax.set_facecolor("green")
     ax.axis("off")
 
@@ -1027,6 +1053,3 @@ def save_for_later(
     plt.tight_layout()
     plt.show()
 
-
-landscape_dimensions = (4961 / 300, 3508 / 300)
-portrait_dimensions = (3508 / 300, 4961 / 300)

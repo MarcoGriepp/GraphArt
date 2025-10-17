@@ -1,27 +1,8 @@
+"""Max's tree plot - fractal tree visualization."""
+
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
-
-# Define dimensions if not imported
-landscape_dimensions = (4961 / 300, 3508 / 300)
-
-
-def create_multi_cmap(colors_list, length):
-    """
-    Creates a colormap from a list of colors and samples 'length' colors from it.
-    """
-    if not colors_list:  # Handle empty colors_list
-        return ["#000000"] * length  # Default to black
-    if length == 0:
-        return []
-    cmap = mcolors.LinearSegmentedColormap.from_list("custom_multi_cmap", colors_list)
-    gradient = [
-        mcolors.to_hex(cmap(i / (length - 1)))
-        if length > 1
-        else mcolors.to_hex(cmap(0.0))
-        for i in range(length)
-    ]
-    return gradient
+from src.utils import create_multi_cmap, LANDSCAPE_DIMENSIONS
 
 
 def tree_plot(
@@ -61,7 +42,7 @@ def tree_plot(
 
     dispersions = np.random.normal(0, sigma_dispersion, n_lines)
 
-    fig, ax = plt.subplots(figsize=landscape_dimensions)
+    fig, ax = plt.subplots(figsize=LANDSCAPE_DIMENSIONS)
     ax.axis("off")
 
     gradient_1 = create_multi_cmap(["#FF69B4", "#FFFFFF", "#CC7722"], n_lines)
@@ -204,4 +185,13 @@ def tree_plot(
     plt.show()
 
 
-tree_plot()
+if __name__ == "__main__":
+    # Example usage
+    tree_plot(
+        n_lines=80,
+        x_length=15,
+        proportions=[0.36, 0, 0.64],
+        phi_base=1.05,
+        branch_segment_length=10,
+        branch_angle=np.pi/12,
+    )
