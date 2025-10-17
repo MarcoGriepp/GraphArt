@@ -7,38 +7,38 @@ A small personal project to create art from graphs in Matplotlib! This project c
 <table>
   <tr>
     <td align="center">
-      <img src="outputs/03_finished_works/gvantsa_plot_with_glow.png" width="350" alt="Gvantsa's Warp Plot"/><br/>
-      <b>Warped Sine Waves</b><br/>
-      <sub>by Gvantsa</sub>
-    </td>
-    <td align="center">
-      <img src="outputs/03_finished_works/jil_plot_with_glow.png" width="350" alt="Jil's Taylor Series Plot"/><br/>
-      <b>Taylor Series Expansion</b><br/>
-      <sub>by Jil</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
       <img src="outputs/03_finished_works/max_plot_with_glow.png" width="350" alt="Max's Tree Plot"/><br/>
       <b>Fractal Tree</b><br/>
-      <sub>by Max</sub>
+      <sub>for Max</sub>
     </td>
     <td align="center">
       <img src="outputs/03_finished_works/taro_plot.png" width="350" alt="Taro's Noisewave Plot"/><br/>
       <b>Symmetric Noisewaves</b><br/>
-      <sub>by Taro</sub>
+      <sub>for Taro</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="outputs/03_finished_works/victor_plot_with_glow.png" width="350" alt="Victor's Step Sine Plot"/><br/>
       <b>Step Sine & Random Walk</b><br/>
-      <sub>by Victor</sub>
+      <sub>for Victor</sub>
     </td>
     <td align="center">
       <img src="outputs/03_finished_works/victoria_plot_with_glow.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
       <b>Parametric Butterfly</b><br/>
-      <sub>by Victoria</sub>
+      <sub>for Victoria</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="outputs/03_finished_works/gvantsa_plot_with_glow.png" width="350" alt="Gvantsa's Warp Plot"/><br/>
+      <b>Warped Sine Waves</b><br/>
+      <sub>for Gvantsa</sub>
+    </td>
+    <td align="center">
+      <img src="outputs/03_finished_works/jil_plot_with_glow.png" width="350" alt="Jil's Taylor Series Plot"/><br/>
+      <b>Taylor Series Expansion</b><br/>
+      <sub>for Jil</sub>
     </td>
   </tr>
 </table>
