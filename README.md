@@ -2,6 +2,47 @@
 
 A small personal project to create art from graphs in Matplotlib! This project contains a collection of artistic visualizations created using mathematical functions and custom plotting techniques.
 
+## Gallery
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="outputs/03_finished_works/gvantsa_plot_with_glow.png" width="350" alt="Gvantsa's Warp Plot"/><br/>
+      <b>Warped Sine Waves</b><br/>
+      <sub>by Gvantsa</sub>
+    </td>
+    <td align="center">
+      <img src="outputs/03_finished_works/jil_plot_with_glow.png" width="350" alt="Jil's Taylor Series Plot"/><br/>
+      <b>Taylor Series Expansion</b><br/>
+      <sub>by Jil</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="outputs/03_finished_works/max_plot_with_glow.png" width="350" alt="Max's Tree Plot"/><br/>
+      <b>Fractal Tree</b><br/>
+      <sub>by Max</sub>
+    </td>
+    <td align="center">
+      <img src="outputs/03_finished_works/taro_plot.png" width="350" alt="Taro's Noisewave Plot"/><br/>
+      <b>Symmetric Noisewaves</b><br/>
+      <sub>by Taro</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="outputs/03_finished_works/victor_plot_with_glow.png" width="350" alt="Victor's Step Sine Plot"/><br/>
+      <b>Step Sine & Random Walk</b><br/>
+      <sub>by Victor</sub>
+    </td>
+    <td align="center">
+      <img src="outputs/03_finished_works/victoria_plot_with_glow.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
+      <b>Parametric Butterfly</b><br/>
+      <sub>by Victoria</sub>
+    </td>
+  </tr>
+</table>
+
 ## Project Structure
 
 ```
