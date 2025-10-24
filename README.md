@@ -24,7 +24,7 @@ A small personal project to create art from graphs in Matplotlib! This project c
       <sub>for Victor</sub>
     </td>
     <td align="center">
-      <img src="outputs/03_finished_works/victoria_plot_with_glow.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
+      <img src="outputs/03_finished_works/victoria_plot_with_glow_option_2.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
       <b>Parametric Butterfly</b><br/>
       <sub>for Victoria</sub>
     </td>
