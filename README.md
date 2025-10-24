@@ -17,13 +17,13 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>Jil is one of the sweetest, sociable people I know, that never fails to connect people to each other. As I learned in my econometrics studies, the Taylor Expansion is a mathematical technique to rewrite functions as infinite series. When visually representing this by using a sine-wave as a function, it results in a beautiful series of curves that come together into one cohesive form, much like the way Jil connects people with her warm and inviting personality.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Shade 1</li>
-          <li>Shade 2</li>
-          <li>Shade 3</li>
-          <li>Shade 4</li>
-          <li>Shade 5</li>
-          <li>Shade 6</li>
-          <li>Background</li>
+          <li>Warm Sand — <code>#E7D4BF</code></li>
+          <li>Soft Cream — <code>#EBE7CD</code></li>
+          <li>Pale Aqua — <code>#D4F1EF</code></li>
+          <li>Sea Mist — <code>#B6E3E4</code></li>
+          <li>Soft Teal — <code>#A2D2DC</code></li>
+          <li>Pale Sky — <code>#91C0D4</code></li>
+          <li>Warm Beige — <code>#E7D7BE</code></li>
         </ul>
       </details>
     </td>
@@ -36,13 +36,13 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>Victoria's idea was easy, as she loves butterflies. However, besides that, I wanted to capture her grace, beauty, and alignment with nature, as well as her vibrant personality.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Soft Pink</li>
-          <li>Mauve</li>
-          <li>Lilac</li>
-          <li>Matcha Green</li>
-          <li>Amethyst</li>
-          <li>Plum</li>
-          <li>Cobalt Blue</li>
+          <li>Soft Pink — <code>#F4C2C2</code></li>
+          <li>Mauve — <code>#E0B0FF</code></li>
+          <li>Lilac — <code>#C8A2C8</code></li>
+          <li>Matcha Green — <code>#A0C25A</code></li>
+          <li>Amethyst — <code>#9966CC</code></li>
+          <li>Plum — <code>#8E4585</code></li>
+          <li>Cobalt Blue — <code>#0047AB</code></li>
         </ul>
       </details>
     </td>
@@ -57,10 +57,10 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>Besides that Max is tall as a tree (at 2m tall), I wanted to capture his strength, assertiveness and steadfastness with this symbol. Max is a reliable and loyal friend, and is never scared to raise his voice if something misaligns with his values.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Pink</li>
-          <li>White</li>
-          <li>Ocher Yellow</li>
-          <li>Background</li>
+          <li>Pink — <code>#FF69B4</code></li>
+          <li>White — <code>#FFFFFF</code></li>
+          <li>Ocher Yellow — <code>#CC7722</code></li>
+          <li>Background — <code>#FFE5B4</code></li>
         </ul>
       </details>
     </td>
@@ -73,12 +73,11 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>For Taro, I wanted something that reflected both his calm, composed, and stoic nature, as well as his driven, creative and (sometimes) chaotic side. The symmetric noisewaves represent this duality, with the noisy side representing creativity and the smooth side representing calmness.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Cosmic Purple</li>
-          <li>Pine Green</li>
-          <li>Algae Green</li>
-          <li>Fern Green</li>
-          <li>Deep Ocean Blue</li>
-          <li>Background</li>
+          <li>Cosmic Purple — <code>#6F6092</code></li>
+          <li>Pine Green — <code>#01796F</code></li>
+          <li>Algae Green — <code>#93DFB8</code></li>
+          <li>Fern Green — <code>#4F7942</code></li>
+          <li>Deep Ocean Blue — <code>#00587A</code></li>
         </ul>
       </details>
     </td>
@@ -93,11 +92,11 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>For Victor, I wanted something to capture both his spiritual depth, as well as his orderly and grounded way of dealing with life. The blocky, random walk at the bottom represents his structured approach, while the sine waves at the top represent his more free-spirited side.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Night</li>
-          <li>Sky Blue</li>
-          <li>Sand</li>
-          <li>Ivory</li>
-          <li>Background</li>
+          <li>Night — <code>#1E3A6A</code></li>
+          <li>Sky Blue — <code>#A3B8ED</code></li>
+          <li>Sand — <code>#D1BDA4</code></li>
+          <li>Ivory — <code>#ECE3DA</code></li>
+          <li>Black — <code>#000000</code></li>
         </ul>
       </details>
     </td>
@@ -110,10 +109,10 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>Gvantsa is bold, graceful and loves to dance. The warped sine waves reflect her dynamic personality and fluid movements.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Yellow</li>
-          <li>Raspberry Pink</li>
-          <li>Lilac Purple</li>
-          <li>Background</li>
+          <li>Yellow — <code>#FFFF00</code></li>
+          <li>Raspberry Pink — <code>#E30B5C</code></li>
+          <li>Lilac Purple — <code>#C8A2C8</code></li>
+          <li>Axes facecolor — <code>green</code></li>
         </ul>
       </details>
     </td>
