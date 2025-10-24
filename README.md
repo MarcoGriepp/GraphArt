@@ -2,6 +2,8 @@
 
 A small personal project to create art from graphs in Matplotlib! This project contains a collection of artistic visualizations created using mathematical functions and custom plotting techniques.
 
+The graphs were originally made as personalized artworks for friends, each tailored to their favourite colours, and how I perceive their character and my relationship to them. 
+
 ## Gallery
 
 <table>
@@ -10,11 +12,35 @@ A small personal project to create art from graphs in Matplotlib! This project c
       <img src="outputs/03_finished_works/max_plot_with_glow.png" width="350" alt="Max's Tree Plot"/><br/>
       <b>Fractal Tree</b><br/>
       <sub>for Max</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>Besides that Max is tall as a tree (at 2m tall), I wanted to capture his strength, assertiveness and steadfastness with this symbol. Max is a reliable and loyal friend, and is never scared to raise his voice if something misaligns with his values.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li>Pink — <code>#FF69B4</code></li>
+          <li>White — <code>#FFFFFF</code></li>
+          <li>Ocher Yellow — <code>#CC7722</code></li>
+          <li>Background — <code>#FFE5B4</code></li>
+        </ul>
+      </details>
     </td>
     <td align="center">
       <img src="outputs/03_finished_works/taro_plot.png" width="350" alt="Taro's Noisewave Plot"/><br/>
       <b>Symmetric Noisewaves</b><br/>
       <sub>for Taro</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>For Taro, I wanted something that reflected both his calm, composed, and stoic nature, as well as his driven, creative and (sometimes) chaotic side. The symmetric noisewaves represent this duality, with the noisy side representing creativity and the smooth side representing calmness.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li>Cosmic Purple — <code>#6F6092</code></li>
+          <li>Pine Green — <code>#01796F</code></li>
+          <li>Algae Green — <code>#93DFB8</code></li>
+          <li>Fern Green — <code>#4F7942</code></li>
+          <li>Deep Ocean Blue — <code>#00587A</code></li>
+          <li>Background — <code>#000000</code></li>
+        </ul>
+      </details>
     </td>
   </tr>
   <tr>
@@ -22,11 +48,37 @@ A small personal project to create art from graphs in Matplotlib! This project c
       <img src="outputs/03_finished_works/victor_plot_with_glow.png" width="350" alt="Victor's Step Sine Plot"/><br/>
       <b>Step Sine & Random Walk</b><br/>
       <sub>for Victor</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>For Victor, I wanted something to capture both his spiritual depth, as well as his orderly and grounded way of dealing with life. The blocky, random walk at the bottom represents his structured approach, while the sine waves at the top represent his more free-spirited side.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li>Night — <code>#1E3A6A</code></li>
+          <li>Sky Blue — <code>#A3B8ED</code></li>
+          <li>Sand — <code>#D1BDA4</code></li>
+          <li>Ivory — <code>#ECE3DA</code></li>
+          <li>Background — <code>#000000</code></li>
+        </ul>
+      </details>
     </td>
     <td align="center">
       <img src="outputs/03_finished_works/victoria_plot_with_glow.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
       <b>Parametric Butterfly</b><br/>
       <sub>for Victoria</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>Victoria's idea was easy, as she loves butterflies. However, besides that, I wanted to capture her grace, beauty, and alignment with nature, as well as her vibrant personality.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li>Soft Pink — <code>#F4C2C2</code></li>
+          <li>Mauve — <code>#E0B0FF</code></li>
+          <li>Lilac — <code>#C8A2C8</code></li>
+          <li>Matcha Green — <code>#A0C25A</code></li>
+          <li>Amethyst — <code>#9966CC</code></li>
+          <li>Plum — <code>#8E4585</code></li>
+          <li>Cobalt Blue — <code>#0047AB</code></li>
+        </ul>
+      </details>
     </td>
   </tr>
   <tr>
@@ -34,11 +86,36 @@ A small personal project to create art from graphs in Matplotlib! This project c
       <img src="outputs/03_finished_works/gvantsa_plot_with_glow.png" width="350" alt="Gvantsa's Warp Plot"/><br/>
       <b>Warped Sine Waves</b><br/>
       <sub>for Gvantsa</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>Gvantsa is bold, graceful and loves to dance. The warped sine waves reflect her dynamic personality and fluid movements.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li>Yellow — <code>#FFFF00</code></li>
+          <li>Raspberry Pink — <code>#E30B5C</code></li>
+          <li>Lilac Purple — <code>#C8A2C8</code></li>
+          <li>Background — <code>#1E1B2E</code></li>
+        </ul>
+      </details>
     </td>
     <td align="center">
       <img src="outputs/03_finished_works/jil_plot_with_glow.png" width="350" alt="Jil's Taylor Series Plot"/><br/>
       <b>Taylor Series Expansion</b><br/>
       <sub>for Jil</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>Jil is one of the sweetest, sociable people I know, that never fails to connect people to each other. As I learned in my econometrics studies, the Taylor Expansion is a mathematical technique to rewrite functions as infinite series. When visually representing this by using a sine-wave as a function, it results in a beautiful series of curves that come together into one cohesive form, much like the way Jil connects people with her warm and inviting personality.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li>#E7D4BF</li>
+          <li>#EBE7CD</li>
+          <li>#D4F1EF</li>
+          <li>#B6E3E4</li>
+          <li>#A2D2DC</li>
+          <li>#91C0D4</li>
+          <li>Background — <code>#E7D7BE</code></li>
+        </ul>
+      </details>
     </td>
   </tr>
 </table>
