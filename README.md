@@ -62,7 +62,7 @@ The graphs were originally made as personalized artworks for friends, each tailo
       </details>
     </td>
     <td align="center">
-      <img src="outputs/03_finished_works/victoria_plot_with_glow.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
+      <img src="outputs/03_finished_works/victoria_plot_with_glow_option2.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
       <b>Parametric Butterfly</b><br/>
       <sub>for Victoria</sub>
       <details>
