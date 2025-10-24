@@ -9,6 +9,46 @@ The graphs were originally made as personalized artworks for friends, each tailo
 <table>
   <tr>
     <td align="center">
+      <img src="outputs/03_finished_works/jil_plot_with_glow.png" width="350" alt="Jil's Taylor Series Plot"/><br/>
+      <b>Taylor Series Expansion</b><br/>
+      <sub>for Jil</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>Jil is one of the sweetest, sociable people I know, that never fails to connect people to each other. As I learned in my econometrics studies, the Taylor Expansion is a mathematical technique to rewrite functions as infinite series. When visually representing this by using a sine-wave as a function, it results in a beautiful series of curves that come together into one cohesive form, much like the way Jil connects people with her warm and inviting personality.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#E7D4BF;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>#E7D4BF</li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#EBE7CD;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>#EBE7CD</li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#D4F1EF;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>#D4F1EF</li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#B6E3E4;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>#B6E3E4</li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#A2D2DC;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>#A2D2DC</li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#91C0D4;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>#91C0D4</li>
+          <li>Background — <code>#E7D7BE</code></li>
+        </ul>
+      </details>
+    </td>
+    <td align="center">
+      <img src="outputs/03_finished_works/victoria_plot_with_glow_option2.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
+      <b>Parametric Butterfly</b><br/>
+      <sub>for Victoria</sub>
+      <details>
+        <summary>Read more</summary>
+        <p>Victoria's idea was easy, as she loves butterflies. However, besides that, I wanted to capture her grace, beauty, and alignment with nature, as well as her vibrant personality.</p>
+        <p><strong>Colours used:</strong></p>
+        <ul>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#F4C2C2;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Soft Pink — <code>#F4C2C2</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#E0B0FF;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Mauve — <code>#E0B0FF</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#C8A2C8;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Lilac — <code>#C8A2C8</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#A0C25A;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Matcha Green — <code>#A0C25A</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#9966CC;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Amethyst — <code>#9966CC</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#8E4585;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Plum — <code>#8E4585</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#0047AB;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Cobalt Blue — <code>#0047AB</code></li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <img src="outputs/03_finished_works/max_plot_with_glow.png" width="350" alt="Max's Tree Plot"/><br/>
       <b>Fractal Tree</b><br/>
       <sub>for Max</sub>
@@ -17,9 +57,9 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>Besides that Max is tall as a tree (at 2m tall), I wanted to capture his strength, assertiveness and steadfastness with this symbol. Max is a reliable and loyal friend, and is never scared to raise his voice if something misaligns with his values.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Pink — <code>#FF69B4</code></li>
-          <li>White — <code>#FFFFFF</code></li>
-          <li>Ocher Yellow — <code>#CC7722</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#FF69B4;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Pink — <code>#FF69B4</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#FFFFFF;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>White — <code>#FFFFFF</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#CC7722;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Ocher Yellow — <code>#CC7722</code></li>
           <li>Background — <code>#FFE5B4</code></li>
         </ul>
       </details>
@@ -33,11 +73,11 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>For Taro, I wanted something that reflected both his calm, composed, and stoic nature, as well as his driven, creative and (sometimes) chaotic side. The symmetric noisewaves represent this duality, with the noisy side representing creativity and the smooth side representing calmness.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Cosmic Purple — <code>#6F6092</code></li>
-          <li>Pine Green — <code>#01796F</code></li>
-          <li>Algae Green — <code>#93DFB8</code></li>
-          <li>Fern Green — <code>#4F7942</code></li>
-          <li>Deep Ocean Blue — <code>#00587A</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#6F6092;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Cosmic Purple — <code>#6F6092</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#01796F;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Pine Green — <code>#01796F</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#93DFB8;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Algae Green — <code>#93DFB8</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#4F7942;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Fern Green — <code>#4F7942</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#00587A;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Deep Ocean Blue — <code>#00587A</code></li>
           <li>Background — <code>#000000</code></li>
         </ul>
       </details>
@@ -53,35 +93,14 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>For Victor, I wanted something to capture both his spiritual depth, as well as his orderly and grounded way of dealing with life. The blocky, random walk at the bottom represents his structured approach, while the sine waves at the top represent his more free-spirited side.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Night — <code>#1E3A6A</code></li>
-          <li>Sky Blue — <code>#A3B8ED</code></li>
-          <li>Sand — <code>#D1BDA4</code></li>
-          <li>Ivory — <code>#ECE3DA</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#1E3A6A;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Night — <code>#1E3A6A</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#A3B8ED;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Sky Blue — <code>#A3B8ED</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#D1BDA4;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Sand — <code>#D1BDA4</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#ECE3DA;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Ivory — <code>#ECE3DA</code></li>
           <li>Background — <code>#000000</code></li>
         </ul>
       </details>
     </td>
-    <td align="center">
-      <img src="outputs/03_finished_works/victoria_plot_with_glow_option2.png" width="350" alt="Victoria's Butterfly Plot"/><br/>
-      <b>Parametric Butterfly</b><br/>
-      <sub>for Victoria</sub>
-      <details>
-        <summary>Read more</summary>
-        <p>Victoria's idea was easy, as she loves butterflies. However, besides that, I wanted to capture her grace, beauty, and alignment with nature, as well as her vibrant personality.</p>
-        <p><strong>Colours used:</strong></p>
-        <ul>
-          <li>Soft Pink — <code>#F4C2C2</code></li>
-          <li>Mauve — <code>#E0B0FF</code></li>
-          <li>Lilac — <code>#C8A2C8</code></li>
-          <li>Matcha Green — <code>#A0C25A</code></li>
-          <li>Amethyst — <code>#9966CC</code></li>
-          <li>Plum — <code>#8E4585</code></li>
-          <li>Cobalt Blue — <code>#0047AB</code></li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="outputs/03_finished_works/gvantsa_plot_with_glow.png" width="350" alt="Gvantsa's Warp Plot"/><br/>
       <b>Warped Sine Waves</b><br/>
@@ -91,29 +110,10 @@ The graphs were originally made as personalized artworks for friends, each tailo
         <p>Gvantsa is bold, graceful and loves to dance. The warped sine waves reflect her dynamic personality and fluid movements.</p>
         <p><strong>Colours used:</strong></p>
         <ul>
-          <li>Yellow — <code>#FFFF00</code></li>
-          <li>Raspberry Pink — <code>#E30B5C</code></li>
-          <li>Lilac Purple — <code>#C8A2C8</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#FFFF00;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Yellow — <code>#FFFF00</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#E30B5C;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Raspberry Pink — <code>#E30B5C</code></li>
+          <li><span style="display:inline-block;width:18px;height:12px;background:#C8A2C8;border:1px solid #ccc;margin-right:6px;vertical-align:middle;"></span>Lilac Purple — <code>#C8A2C8</code></li>
           <li>Background — <code>#1E1B2E</code></li>
-        </ul>
-      </details>
-    </td>
-    <td align="center">
-      <img src="outputs/03_finished_works/jil_plot_with_glow.png" width="350" alt="Jil's Taylor Series Plot"/><br/>
-      <b>Taylor Series Expansion</b><br/>
-      <sub>for Jil</sub>
-      <details>
-        <summary>Read more</summary>
-        <p>Jil is one of the sweetest, sociable people I know, that never fails to connect people to each other. As I learned in my econometrics studies, the Taylor Expansion is a mathematical technique to rewrite functions as infinite series. When visually representing this by using a sine-wave as a function, it results in a beautiful series of curves that come together into one cohesive form, much like the way Jil connects people with her warm and inviting personality.</p>
-        <p><strong>Colours used:</strong></p>
-        <ul>
-          <li>#E7D4BF</li>
-          <li>#EBE7CD</li>
-          <li>#D4F1EF</li>
-          <li>#B6E3E4</li>
-          <li>#A2D2DC</li>
-          <li>#91C0D4</li>
-          <li>Background — <code>#E7D7BE</code></li>
         </ul>
       </details>
     </td>
